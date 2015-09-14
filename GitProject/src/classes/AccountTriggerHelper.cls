@@ -1,3 +1,4 @@
+//added a comment
 public class AccountTriggerHelper{
    public static void updateContactAcct(List <Account> triggernew,List<Account> triggerold){
       Map<Id,Account> acctsWithNewContacts = new Map<Id,Account>(); 
@@ -6,7 +7,7 @@ public class AccountTriggerHelper{
                acctsWithNewContacts.put(triggerold[i].id,triggernew[i]);
           }                     
       } 
-      
+      // list to get the list of contacts
       //List<Contact> updatedContacts  = new List<Contact>();
       List<Contact> Contacts  = [select id, accountId, Contactacct__c FROM contact 
                                         where accountId in : acctsWithNewContacts.keySet()];
