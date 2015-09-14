@@ -1,3 +1,4 @@
+// added a comment
 public class Account1TriggerHelper{
 public static void Updatecontact(Map<ID,Account> mapaccts)
 {
